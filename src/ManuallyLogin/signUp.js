@@ -161,6 +161,9 @@ const MyForm = () => {
           {errorMessage && <h2>Error: {errorMessage}</h2>}
         </div>
       )}
+        <Button color="secondary" onClick={() => navigate('/login')}>
+  login
+      </Button>
     </div>
   );
 };
