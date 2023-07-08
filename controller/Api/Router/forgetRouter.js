@@ -34,7 +34,7 @@ router.post('/', function (req, res, next) {
       // Configure SendGrid transport
       const options = {
         auth: {
-          api_key: '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' // Replace with your SendGrid API key
+          api_key: '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' // Replace with your SendGrid API key
         }
       };
       const smtpTransport = nodemailer.createTransport(sgTransport(options));

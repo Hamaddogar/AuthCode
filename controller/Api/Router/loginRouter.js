@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
       }
   
       // Passwords match, send success response
-      return res.json({ message: 'Login successful' });
+      return res.json({message: 'Login successful' });
     } catch (error) {
       console.error(error);
       return res.status(500).json({ message: 'Server error' });

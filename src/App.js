@@ -6,12 +6,14 @@ import SignupForm from '../src/ManuallyLogin/signUp';
 import Dashboard from '../src/ManuallyLogin/Dashboard';
  import Forgot from '../src/ManuallyLogin/forgot'
  import Reset from '../src/ManuallyLogin/resetpassword'
+ import Main from '../src/GithubLogin/main'
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/login" element={<LoginForm />} />
-        <Route path="/" element={<SignupForm />} />
+        <Route path="/" element={<Main/>} />
+        {/* <Route path="/" element={<SignupForm />} /> */}
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/Forgot" element={<Forgot />} />
         <Route path="/reset/:token" element={<Reset/>} />
